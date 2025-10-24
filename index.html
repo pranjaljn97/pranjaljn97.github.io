@@ -1,0 +1,151 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pranjal Jain — Portfolio</title>
+  <meta name="description" content="Portfolio and resume of Pranjal Jain — Data Engineer focused on scalable data systems, blockchain intelligence, and clean infra." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+  <meta property="og:title" content="Pranjal Jain — Portfolio" />
+  <meta property="og:description" content="Data Engineer | Core Ingestion @ TRM Labs | Ex-Postman" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN-HERE/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Pranjal Jain",
+    "jobTitle":"Software/Data Engineer",
+    "affiliation":{"@type":"Organization","name":"TRM Labs"},
+    "homeLocation":{"@type":"Place","name":"Bengaluru, India"},
+    "url":"https://YOUR-DOMAIN-HERE/",
+    "sameAs":[
+      "https://www.linkedin.com/in/YOUR-LINKEDIN",
+      "https://github.com/YOUR-GITHUB"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="/">PJ</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn--primary" href="/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero" id="content" aria-label="Intro">
+        <h1>Pranjal Jain</h1>
+        <p class="tagline">Data Engineer • Core Ingestion @ TRM Labs • Ex-Postman</p>
+        <p class="sub">I build reliable, low-latency data systems for crypto intelligence: ingestion, ETL, and analytics at scale.</p>
+        <div class="actions">
+          <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn--primary" href="/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        Bengaluru-based engineer focused on backend & data infrastructure: streaming pipelines, schema design, and
+        production reliability. Currently on the Core Ingestion team at TRM Labs (blockchain intelligence). Previously led
+        Data Engineering initiatives at Postman.
+      </p>
+      <ul class="chips" aria-label="Key skills">
+        <li>Python</li><li>SQL</li><li>Spark</li><li>Airflow</li><li>Kafka</li><li>AWS</li><li>Docker</li><li>Kubernetes</li>
+        <li>Data Modeling</li><li>Observability</li>
+      </ul>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <article class="xp">
+        <div class="xp-head">
+          <h3>Software Engineer — Core Ingestion</h3>
+          <span class="org">TRM Labs</span>
+        </div>
+        <div class="meta">Bengaluru • 2024 — Present</div>
+        <ul>
+          <li>Own ingestion reliability SLAs for on-chain/off-chain data sources and exchange feeds.</li>
+          <li>Built and tuned streaming jobs with back-pressure control, idempotent sinks, and schema evolution.</li>
+          <li>Shipped observability for lag, freshness, and cost with actionable SLOs.</li>
+        </ul>
+      </article>
+      <article class="xp">
+        <div class="xp-head">
+          <h3>Lead — Data Engineering</h3>
+          <span class="org">Postman</span>
+        </div>
+        <div class="meta">Bengaluru • Past</div>
+        <ul>
+          <li>Led pipelines powering product analytics and growth experiments at scale.</li>
+          <li>Migrated legacy batch jobs to event-driven, testable DAGs with clear ownership.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>On-chain Anomaly Detection</h3>
+          <p>Feature store + streaming detectors for sudden volume spikes and address linkages; alerting with low false positives.</p>
+          <ul class="mini">
+            <li>Kafka, Flink/Spark</li><li>AWS</li><li>Grafana</li>
+          </ul>
+        </article>
+        <article class="tile">
+          <h3>Real-time Exchange ETL</h3>
+          <p>Unified connectors for multiple exchanges; exactly-once writes, schema registry, and replay tooling.</p>
+          <ul class="mini">
+            <li>Python</li><li>Airflow</li><li>Delta/Parquet</li>
+          </ul>
+        </article>
+        <article class="tile">
+          <h3>Portfolio & Resume Site</h3>
+          <p>This site, deployed via GitHub Pages and mapped to a custom domain. Zero-dependency, fast to iterate.</p>
+          <ul class="mini">
+            <li>HTML/CSS</li><li>GitHub Pages</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>
+        Best way to reach me: <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>.
+        You can also find my code on <a href="https://github.com/YOUR-GITHUB" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+      <p class="note">Fitness nerd, AI enthusiast, and long-term markets observer.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year">2025</span> Pranjal Jain • Built with HTML & CSS • Hosted on GitHub Pages</small>
+    </div>
+  </footer>
+
+  <script>
+    // Keep the year current without frameworks
+    (function(){ try { document.getElementById('year').textContent = new Date().getFullYear(); } catch(e){} })();
+  </script>
+</body>
+</html>

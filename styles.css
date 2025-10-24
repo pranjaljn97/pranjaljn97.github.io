@@ -1,0 +1,139 @@
+/* styles.css */
+:root{
+  --bg: #0b0d10;
+  --bg-elev: #101319;
+  --text: #e7edf3;
+  --muted: #a7b1bb;
+  --brand: #7cd2ff;
+  --accent: #9aff6b;
+  --card: #121620;
+  --border: #1d2330;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --radius: 16px;
+  --w: 1080px;
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f7fafc; --bg-elev:#fff; --text:#0b1020; --muted:#5b6470;
+    --card:#ffffff; --border:#e6e9ef; --shadow:0 10px 30px rgba(10,30,60,.08);
+    --brand:#0a84ff; --accent:#0bb15c;
+  }
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: linear-gradient(180deg, var(--bg-elev), var(--bg));
+  color: var(--text);
+}
+
+.container{
+  max-width: var(--w);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skip{
+  position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
+}
+.skip:focus{position:static;width:auto;height:auto;padding:8px;background:var(--brand);color:#fff}
+
+.site-header{
+  position: sticky; top:0; z-index: 10;
+  backdrop-filter: saturate(120%) blur(8px);
+  background: color-mix(in oklab, var(--bg-elev) 80%, transparent);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav{
+  display:flex; align-items:center; justify-content:space-between;
+  padding: 12px 0;
+}
+.brand{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:36px;height:36px;border-radius:50%;
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  color:#001018; font-weight:800; text-decoration:none;
+  box-shadow: var(--shadow);
+}
+.nav-links{display:flex; gap:16px; list-style:none; margin:0; padding:0}
+.nav a{color:var(--text); text-decoration:none}
+.nav a:hover{color:var(--brand)}
+.btn{
+  display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid var(--border);
+  text-decoration:none; color:var(--text); transition: transform .06s ease, background .2s ease, border-color .2s ease;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--card) 90%, transparent), color-mix(in oklab, var(--bg-elev) 80%, transparent));
+}
+.btn:hover{transform: translateY(-1px); border-color: color-mix(in oklab, var(--brand) 50%, var(--border))}
+.btn--primary{
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  color:#001018; border-color: transparent; font-weight:700;
+}
+
+.hero{
+  padding: 48px 0 28px;
+  text-align:left;
+}
+.hero h1{font-size: clamp(28px, 4vw, 48px); line-height:1.1; margin: 8px 0}
+.tagline{color:var(--brand); font-weight:700; letter-spacing:.2px; margin:6px 0}
+.sub{color:var(--muted); max-width: 70ch}
+.actions{display:flex; gap:12px; flex-wrap: wrap; margin-top:16px}
+
+main{padding: 28px 0 60px}
+
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  margin: 14px 0;
+  box-shadow: var(--shadow);
+}
+
+h2{font-size: clamp(20px, 2.4vw, 28px); margin: 0 0 10px}
+h3{margin: 0 0 6px}
+
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:10px 0 0}
+.chips li{
+  padding:6px 10px;border:1px solid var(--border);border-radius:999px;background: color-mix(in oklab, var(--card) 92%, transparent); color:var(--muted); font-weight:600
+}
+
+.xp{margin: 10px 0 12px}
+.xp-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap}
+.org{color:var(--muted); font-weight:700}
+.meta{color:var(--muted); font-size:.95rem; margin: 4px 0 8px}
+.xp ul{margin:6px 0 0 18px}
+
+.grid{
+  display:grid; gap:12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+}
+.tile{
+  border:1px dashed var(--border); border-radius:14px; padding:14px;
+  background: color-mix(in oklab, var(--card) 96%, transparent);
+}
+.tile h3{margin-bottom:6px}
+.mini{display:flex;gap:8px;list-style:none;padding:0;margin:10px 0 0;color:var(--muted);flex-wrap:wrap}
+.mini li{border:1px solid var(--border); padding:4px 8px; border-radius:8px}
+
+.note{color:var(--muted)}
+
+.site-footer{
+  border-top:1px solid var(--border);
+  background: color-mix(in oklab, var(--bg-elev) 85%, transparent);
+  padding: 18px 0;
+  text-align:center;
+}
+
+/* Responsive tightness */
+@media (max-width: 720px){
+  .nav-links li:nth-last-child(1){display:none} /* hide resume button on tiny screens; still in hero */
+}
+
+/* Print-friendly resume button hidden in print */
+@media print{
+  .site-header, .site-footer, .actions a[href$=".pdf"]{ display:none !important; }
+}

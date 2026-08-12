@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pranjal Jain — Resume</title>
+<!--
+  SOURCE OF TRUTH for /Pranjal_Jain_Resume.pdf.
+
+  This is a fixed A4 print layout, not a web page. To regenerate the PDF after
+  editing, run ./render.sh from this directory:
+
+    RESUME_PHONE='(+91) XXXXXXXXXX' ./render.sh
+
+  The phone number is deliberately NOT stored here. This repo is public — both on
+  GitHub and via Pages — so a literal number in this file would be plain, scrapable
+  text in two places. It lives only in the generated PDF, substituted into the
+  placeholder in the contact line at render time. Keep it that way.
+
+  Do not remove the `@page { size: A4; margin: 0 }` rule below — Chrome defers to it,
+  and without it you get 0.4in default margins and a 2-page render.
+-->
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Liberation Sans", Arial, sans-serif;
+    color: #2b2b2b;
+    font-size: 8.9pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Links inherit their surrounding colour so the PDF stays visually identical
+     to the pre-link version — clickable, but not blue-and-underlined. */
+  a { color: inherit; text-decoration: none; }
+  .page { padding: 27pt 32pt 20pt 32pt; }
+
+  /* ---------- Header ---------- */
+  .name {
+    font-size: 26pt; font-weight: bold; color: #1A5F98;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    font-size: 10pt; font-weight: bold; color: #2379B2;
+    letter-spacing: 3.2pt; margin-top: 4pt; text-transform: uppercase;
+  }
+  .contact {
+    font-size: 8.8pt; color: #2379B2; margin-top: 5pt;
+  }
+  .contact .sep { color: #9bb7cc; padding: 0 3pt; }
+  .summary {
+    margin-top: 9pt; font-size: 8.9pt; color: #3a3a3a; line-height: 1.42;
+  }
+
+  /* ---------- Columns ---------- */
+  .columns { display: flex; margin-top: 12pt; gap: 16pt; }
+  .main { width: 66%; }
+  .side { width: 34%; }
+
+  /* ---------- Section headers ---------- */
+  .sec {
+    font-size: 10.6pt; font-weight: bold; color: #0D3B66;
+    letter-spacing: 2.6pt; text-transform: uppercase;
+    margin-bottom: 7pt;
+  }
+  .side .sec { font-size: 9.2pt; letter-spacing: 2.2pt; }
+
+  /* ---------- Experience ---------- */
+  .job { margin-bottom: 9.5pt; }
+  .job-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 3pt;
+  }
+  .job-title { font-size: 10.2pt; font-weight: bold; color: #1c2a38; }
+  .job-title .co { color: #2E8BC0; }
+  .job-meta {
+    font-size: 7.8pt; color: #45647d; background: #D8E6F0;
+    padding: 1.5pt 6pt; border-radius: 6pt; white-space: nowrap;
+  }
+  ul.bullets { list-style: none; }
+  ul.bullets li {
+    padding-left: 11pt; position: relative; margin-bottom: 2.8pt;
+    color: #3a3a3a;
+  }
+  ul.bullets li::before {
+    content: "\25B9"; position: absolute; left: 0; top: 0;
+    color: #2E8BC0; font-size: 8pt;
+  }
+
+  /* ---------- Sidebar ---------- */
+  .side-block { margin-bottom: 16pt; }
+  .skill-group { margin-bottom: 6.5pt; }
+  .skill-label { font-weight: bold; font-size: 9pt; color: #1c2a38; margin-bottom: 3pt; }
+  .chips { line-height: 1.9; }
+  .chip {
+    display: inline-block; background: #eef1f4; color: #3a3a3a;
+    font-size: 8pt; padding: 1.4pt 5.5pt; border-radius: 3pt;
+    margin: 0 2pt 2pt 0;
+  }
+  .award { margin-bottom: 8pt; }
+  .award-name { font-weight: bold; font-size: 9.2pt; color: #1c2a38; }
+  .award-meta { font-size: 8.2pt; color: #6b7a87; margin-top: 1pt; }
+  .edu-school { font-weight: bold; font-size: 9.4pt; color: #1c2a38; }
+  .edu-deg { font-size: 8.8pt; color: #3a3a3a; margin-top: 2pt; line-height: 1.45; }
+  .edu-meta { font-size: 8.2pt; color: #6b7a87; margin-top: 2pt; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="name">Pranjal Jain</div>
+  <div class="subtitle">Founding Engineer &nbsp;&middot;&nbsp; Backend &amp; Distributed Systems</div>
+  <div class="contact">
+    <a href="mailto:pranjal.jn97@gmail.com">pranjal.jn97@gmail.com</a><span class="sep">|</span>{{PHONE}}<span class="sep">|</span>Bengaluru, India<span class="sep">|</span><a href="https://pranjaljain.work">pranjaljain.work</a><span class="sep">|</span><a href="https://www.linkedin.com/in/pranjaljn97/">linkedin.com/in/pranjaljn97</a>
+  </div>
+
+  <div class="summary">
+    Backend engineer with 7+ years architecting high-throughput, transaction-heavy distributed systems across fintech, blockchain intelligence, and high-growth startups. I've shipped a real-time prediction market terminal 0&rarr;1 as a founding engineer &mdash; portfolio tracking, order management, live market data &mdash; and run petabyte-scale ingestion in production on GCP and AWS. I deliberately moved from engineering management back to hands-on IC work &mdash; owning hard systems end to end is what I do best.
+  </div>
+
+  <div class="columns">
+    <div class="main">
+      <div class="sec">Experience</div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Founding Engineer <span class="co">&middot; <a href="https://pro.fireplace.gg">Fireplace</a></span></div>
+          <div class="job-meta">Feb 2026 &ndash; Present &nbsp;&middot;&nbsp; Remote</div>
+        </div>
+        <ul class="bullets">
+          <li>Shipped the 0&rarr;1 product &mdash; a real-time prediction market terminal with portfolio tracking, an order management system, and live market analytics &mdash; owning end-to-end architecture and delivery.</li>
+          <li>Built the low-latency TypeScript backend powering the web app and a conversational agentic bot &mdash; APIs, auth, application logic, and real-time streaming delivery to clients.</li>
+          <li>Built the on-chain indexing pipeline in Rust and ClickHouse, ingesting live blockchain transactions at scale to power position tracking, wallet-level PnL, search, and global leaderboards.</li>
+          <li>Designed a real-time trade detection engine surfacing insider and unusual activity by correlating live on-chain flows against historical baselines.</li>
+          <li>Bootstrapped the engineering stack from scratch &mdash; cloud, metrics, search, and CI/CD.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Senior Software Engineer <span class="co">&middot; TRM Labs</span></div>
+          <div class="job-meta">Sep 2024 &ndash; Jan 2026 &nbsp;&middot;&nbsp; Remote</div>
+        </div>
+        <ul class="bullets">
+          <li>Designed and operated petabyte-scale batch and streaming ingestion on GCP &mdash; BigQuery, Dataflow, Airflow &mdash; processing 10,000+ events/sec across Aptos, ZKSync, and Hyperliquid, unlocking ~$2M in enterprise revenue.</li>
+          <li>Built keystone asset-transfer datasets powering the AML and compliance detection models used by financial institutions and government agencies across the platform.</li>
+          <li>Cut infrastructure spend ~30% (~$100K annually) via storage tiering and containerized compute; architected an agentic multi-source data acquisition platform that halved processing latency.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Engineering Lead <span class="co">&middot; Zluri</span></div>
+          <div class="job-meta">Apr 2024 &ndash; Sep 2024 &nbsp;&middot;&nbsp; Bengaluru</div>
+        </div>
+        <ul class="bullets">
+          <li>Led a 5-engineer data product team shipping user, application, and activity-tracking features on the Shadow IT discovery engine spanning 50+ SaaS sources.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Engineering Manager <span class="co">&middot; Postman</span></div>
+          <div class="job-meta">Jan 2019 &ndash; Apr 2024 &nbsp;&middot;&nbsp; Bengaluru</div>
+        </div>
+        <ul class="bullets">
+          <li>Promoted twice over 5 years (Data Engineer &rarr; Technical Lead &rarr; Engineering Manager).</li>
+          <li>Led a multi-region data residency and governance initiative across Product, Legal, and Engineering &mdash; compliance-sensitive systems work that unblocked enterprise expansion.</li>
+          <li>Built and mentored a team of 7 engineers, implementing agile processes that improved delivery predictability.</li>
+          <li>Architected a multi-tenant data lakehouse and platformized the transformation layer with CI/CD and testing frameworks &mdash; boosting downstream developer productivity by 40%.</li>
+          <li>Scaled in-house data integration platform &ldquo;Fulcrum&rdquo; to 60+ integrations and 20+ contributors; built near real-time EL, server events, and clickstream pipelines underpinning company-wide analytics and experimentation.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <div class="job-title">Co-Founder <span class="co">&middot; Eatopedia</span></div>
+          <div class="job-meta">Nov 2016 &ndash; Dec 2017 &nbsp;&middot;&nbsp; Dehradun</div>
+        </div>
+        <ul class="bullets">
+          <li>First founding experience &mdash; built web, mobile, and a Facebook Messenger chatbot end-to-end; acquired 5K users and onboarded 50+ restaurants.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="side">
+      <div class="side-block">
+        <div class="sec">Technical Skills</div>
+
+        <div class="skill-group">
+          <div class="skill-label">Languages</div>
+          <div class="chips"><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Rust</span><span class="chip">Go</span></div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Data Infra</div>
+          <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Kafka</span><span class="chip">ClickHouse</span><span class="chip">Redis</span><span class="chip">MongoDB</span><span class="chip">BigQuery</span><span class="chip">Snowflake</span><span class="chip">Redshift</span><span class="chip">Spark</span><span class="chip">Airflow</span><span class="chip">dbt</span></div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Backend &amp; Agentic</div>
+          <div class="chips"><span class="chip">Express.js</span><span class="chip">FastAPI</span><span class="chip">Django</span><span class="chip">Claude</span><span class="chip">LangGraph</span><span class="chip">n8n</span></div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Cloud &amp; Infra</div>
+          <div class="chips"><span class="chip">AWS</span><span class="chip">GCP</span><span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">Terraform</span></div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-label">Expertise</div>
+          <div class="chips"><span class="chip">Blockchains</span><span class="chip">Data Platforms</span><span class="chip">Distributed Systems</span><span class="chip">Agentic Systems</span></div>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <div class="sec">Achievements &amp; Awards</div>
+        <div class="award">
+          <div class="award-name">Airbyte Hackathon Winner</div>
+          <div class="award-meta">Airbyte &middot; Oct 2023</div>
+        </div>
+        <div class="award">
+          <div class="award-name">Best Startup</div>
+          <div class="award-meta">Google Startup Weekend, TechStars &middot; Feb 2017</div>
+        </div>
+        <div class="award">
+          <div class="award-name">Open Source Contributor</div>
+          <div class="award-meta">Fluid &mdash; AChecker &middot; Jan 2018</div>
+        </div>
+      </div>
+
+      <div class="side-block">
+        <div class="sec">Education</div>
+        <div class="edu-school">University of Petroleum &amp; Energy Studies</div>
+        <div class="edu-deg">B.Tech, Computer Science &mdash; Specialization in Cloud Computing &amp; Virtualization Technology</div>
+        <div class="edu-meta">Jul 2015 &ndash; May 2019 &middot; Dehradun, India</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

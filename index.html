@@ -4,24 +4,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pranjal Jain — Portfolio</title>
-  <meta name="description" content="Portfolio and resume of Pranjal Jain — Data Engineer focused on scalable data systems, blockchain intelligence, and clean infra." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Pranjal Jain — Founding Engineer @ Fireplace</title>
+  <meta name="description" content="Backend engineer with 7+ years architecting high-throughput, transaction-heavy distributed systems across fintech, blockchain intelligence, and high-growth startups." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
-  <meta property="og:title" content="Pranjal Jain — Portfolio" />
-  <meta property="og:description" content="Data Engineer | Core Ingestion @ TRM Labs | Ex-Postman" />
+  <meta property="og:title" content="Pranjal Jain — Founding Engineer @ Fireplace" />
+  <meta property="og:description" content="Founding Engineer at Fireplace. Backend &amp; distributed systems. Ex-TRM Labs, Zluri, Postman." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pranjaljain.work" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary" />
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Pranjal Jain",
-    "jobTitle":"Software/Data Engineer",
-    "affiliation":{"@type":"Organization","name":"TRM Labs"},
+    "jobTitle":"Founding Engineer",
+    "worksFor":{"@type":"Organization","name":"Fireplace","url":"https://pro.fireplace.gg"},
+    "alumniOf":{"@type":"CollegeOrUniversity","name":"University of Petroleum & Energy Studies"},
     "homeLocation":{"@type":"Place","name":"Bengaluru, India"},
+    "knowsAbout":["Distributed Systems","Data Platforms","Blockchains","Agentic Systems"],
     "url":"https://pranjaljain.work/",
     "sameAs":[
       "https://www.linkedin.com/in/pranjaljn97/",
@@ -38,22 +39,28 @@
       <nav class="nav">
         <a class="brand" href="/">PJ</a>
         <ul class="nav-links">
+          <!-- Kept to 3 anchors. .nav-links is a no-wrap flex row with no mobile
+               collapse, so each extra label costs horizontal room: measured at a
+               320px viewport a 4th link overflows the page by 22px (the previous
+               4-link nav overflowed by 9px). 3 links fit at every width tested
+               (320/360/375/414/768). #education and #achievements are still
+               reachable by scrolling. -->
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a class="btn btn--primary" href="/Pranjal_Jain_2025.pdf" target="_blank" rel="noopener">Resume</a></li>
+          <li><a class="btn btn--primary" href="/Pranjal_Jain_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
         </ul>
       </nav>
 
       <section class="hero" id="content" aria-label="Intro">
         <h1>Pranjal Jain</h1>
-        <p class="tagline">Data Engineer • Core Ingestion @ TRM Labs • Ex-Postman</p>
-        <p class="sub">I build reliable, low-latency data systems for crypto intelligence: ingestion, ETL, and analytics at scale.</p>
+        <p class="tagline">Founding Engineer @ Fireplace • Backend &amp; Distributed Systems</p>
+        <p class="sub">I build high-throughput, transaction-heavy distributed systems — real-time trading infrastructure, on-chain indexing, and petabyte-scale data platforms. Previously TRM Labs, Zluri, and Postman.</p>
         <div class="actions">
+          <a class="btn" href="https://pro.fireplace.gg" target="_blank" rel="noopener">Fireplace ↗</a>
           <a class="btn" href="https://www.linkedin.com/in/pranjaljn97/" target="_blank" rel="noopener">LinkedIn</a>
           <a class="btn" href="https://github.com/pranjaljn97" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn btn--primary" href="/Pranjal_Jain_2025.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn btn--primary" href="/Pranjal_Jain_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
         </div>
       </section>
     </div>
@@ -63,65 +70,117 @@
     <section id="about" class="card">
       <h2>About</h2>
       <p>
-        Bengaluru-based engineer focused on backend & data infrastructure: streaming pipelines, schema design, and
-        production reliability. Currently on the Core Ingestion team at TRM Labs (blockchain intelligence). Previously led
-        Data Engineering initiatives at Postman.
+        Backend engineer with 7+ years architecting high-throughput, transaction-heavy distributed systems across
+        fintech, blockchain intelligence, and high-growth startups. I've shipped a real-time prediction market
+        terminal 0→1 as a founding engineer — portfolio tracking, order management, live market data — and run
+        petabyte-scale ingestion in production on GCP and AWS. I deliberately moved from engineering management
+        back to hands-on IC work — owning hard systems end to end is what I do best.
       </p>
-      <ul class="chips" aria-label="Key skills">
-        <li>Python</li><li>SQL</li><li>Spark</li><li>Airflow</li><li>Kafka</li><li>AWS</li><li>Docker</li><li>Kubernetes</li>
-        <li>Data Modeling</li><li>Observability</li>
+      <ul class="chips" aria-label="Technical skills">
+        <li>TypeScript</li><li>Python</li><li>SQL</li><li>Rust</li><li>Go</li>
+        <li>PostgreSQL</li><li>Kafka</li><li>ClickHouse</li><li>Redis</li><li>MongoDB</li><li>BigQuery</li>
+        <li>Snowflake</li><li>Redshift</li><li>Spark</li><li>Airflow</li><li>dbt</li>
+        <li>Express.js</li><li>FastAPI</li><li>Django</li><li>Claude</li><li>LangGraph</li><li>n8n</li>
+        <li>AWS</li><li>GCP</li><li>Kubernetes</li><li>Docker</li><li>Terraform</li>
+        <li>Distributed Systems</li><li>Data Platforms</li><li>Blockchains</li><li>Agentic Systems</li>
       </ul>
     </section>
 
     <section id="experience" class="card">
       <h2>Experience</h2>
+
       <article class="xp">
         <div class="xp-head">
-          <h3>Software Engineer — Core Ingestion</h3>
-          <span class="org">TRM Labs</span>
+          <h3>Founding Engineer</h3>
+          <span class="org">Fireplace</span>
         </div>
-        <div class="meta">Bengaluru • 2024 — Present</div>
+        <div class="meta">Remote • Feb 2026 — Present • <a href="https://pro.fireplace.gg" target="_blank" rel="noopener">pro.fireplace.gg</a></div>
         <ul>
-          <li>Own ingestion reliability SLAs for on-chain/off-chain data sources and exchange feeds.</li>
-          <li>Built and tuned streaming jobs with back-pressure control, idempotent sinks, and schema evolution.</li>
-          <li>Shipped observability for lag, freshness, and cost with actionable SLOs.</li>
+          <li>Shipped the 0→1 product — a real-time prediction market terminal with portfolio tracking, an order management system, and live market analytics — owning end-to-end architecture and delivery.</li>
+          <li>Built the low-latency TypeScript backend powering the web app and a conversational agentic bot — APIs, auth, application logic, and real-time streaming delivery to clients.</li>
+          <li>Built the on-chain indexing pipeline in Rust and ClickHouse, ingesting live blockchain transactions at scale to power position tracking, wallet-level PnL, search, and global leaderboards.</li>
+          <li>Designed a real-time trade detection engine surfacing insider and unusual activity by correlating live on-chain flows against historical baselines.</li>
+          <li>Bootstrapped the engineering stack from scratch — cloud, metrics, search, and CI/CD.</li>
         </ul>
       </article>
+
       <article class="xp">
         <div class="xp-head">
-          <h3>Lead — Data Engineering</h3>
+          <h3>Senior Software Engineer</h3>
+          <span class="org">TRM Labs</span>
+        </div>
+        <div class="meta">Remote • Sep 2024 — Jan 2026</div>
+        <ul>
+          <li>Designed and operated petabyte-scale batch and streaming ingestion on GCP — BigQuery, Dataflow, Airflow — processing 10,000+ events/sec across Aptos, ZKSync, and Hyperliquid, unlocking ~$2M in enterprise revenue.</li>
+          <li>Built keystone asset-transfer datasets powering the AML and compliance detection models used by financial institutions and government agencies across the platform.</li>
+          <li>Cut infrastructure spend ~30% (~$100K annually) via storage tiering and containerized compute; architected an agentic multi-source data acquisition platform that halved processing latency.</li>
+        </ul>
+      </article>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3>Engineering Lead</h3>
+          <span class="org">Zluri</span>
+        </div>
+        <div class="meta">Bengaluru • Apr 2024 — Sep 2024</div>
+        <ul>
+          <li>Led a 5-engineer data product team shipping user, application, and activity-tracking features on the Shadow IT discovery engine spanning 50+ SaaS sources.</li>
+        </ul>
+      </article>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3>Engineering Manager</h3>
           <span class="org">Postman</span>
         </div>
-        <div class="meta">Bengaluru • Past</div>
+        <div class="meta">Bengaluru • Jan 2019 — Apr 2024</div>
         <ul>
-          <li>Led pipelines powering product analytics and growth experiments at scale.</li>
-          <li>Migrated legacy batch jobs to event-driven, testable DAGs with clear ownership.</li>
+          <li>Promoted twice over 5 years (Data Engineer → Technical Lead → Engineering Manager).</li>
+          <li>Led a multi-region data residency and governance initiative across Product, Legal, and Engineering — compliance-sensitive systems work that unblocked enterprise expansion.</li>
+          <li>Built and mentored a team of 7 engineers, implementing agile processes that improved delivery predictability.</li>
+          <li>Architected a multi-tenant data lakehouse and platformized the transformation layer with CI/CD and testing frameworks — boosting downstream developer productivity by 40%.</li>
+          <li>Scaled in-house data integration platform “Fulcrum” to 60+ integrations and 20+ contributors; built near real-time EL, server events, and clickstream pipelines underpinning company-wide analytics and experimentation.</li>
+        </ul>
+      </article>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3>Co-Founder</h3>
+          <span class="org">Eatopedia</span>
+        </div>
+        <div class="meta">Dehradun • Nov 2016 — Dec 2017</div>
+        <ul>
+          <li>First founding experience — built web, mobile, and a Facebook Messenger chatbot end-to-end; acquired 5K users and onboarded 50+ restaurants.</li>
         </ul>
       </article>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Selected Projects</h2>
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <h3>University of Petroleum &amp; Energy Studies</h3>
+      <div class="meta">B.Tech, Computer Science — Specialization in Cloud Computing &amp; Virtualization Technology</div>
+      <p class="note">Dehradun, India • Jul 2015 — May 2019</p>
+    </section>
+
+    <section id="achievements" class="card">
+      <h2>Achievements &amp; Awards</h2>
       <div class="grid">
         <article class="tile">
-          <h3>On-chain Anomaly Detection</h3>
-          <p>Feature store + streaming detectors for sudden volume spikes and address linkages; alerting with low false positives.</p>
+          <h3>Airbyte Hackathon Winner</h3>
           <ul class="mini">
-            <li>Kafka, Flink/Spark</li><li>AWS</li><li>Grafana</li>
+            <li>Airbyte</li><li>Oct 2023</li>
           </ul>
         </article>
         <article class="tile">
-          <h3>Real-time Exchange ETL</h3>
-          <p>Unified connectors for multiple exchanges; exactly-once writes, schema registry, and replay tooling.</p>
+          <h3>Best Startup</h3>
           <ul class="mini">
-            <li>Python</li><li>Airflow</li><li>Delta/Parquet</li>
+            <li>Google Startup Weekend, TechStars</li><li>Feb 2017</li>
           </ul>
         </article>
         <article class="tile">
-          <h3>Portfolio & Resume Site</h3>
-          <p>This site, deployed via GitHub Pages and mapped to a custom domain. Zero-dependency, fast to iterate.</p>
+          <h3>Open Source Contributor</h3>
           <ul class="mini">
-            <li>HTML/CSS</li><li>GitHub Pages</li>
+            <li>Fluid — AChecker</li><li>Jan 2018</li>
           </ul>
         </article>
       </div>
@@ -130,16 +189,18 @@
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p>
-        Best way to reach me: <a href="https://www.linkedin.com/in/pranjaljn97/" target="_blank" rel="noopener">LinkedIn</a>.
-        You can also find my code on <a href="https://github.com/pranjaljn97" target="_blank" rel="noopener">GitHub</a>.
+        Email <a href="mailto:pranjal.jn97@gmail.com">pranjal.jn97@gmail.com</a>, or reach me on
+        <a href="https://www.linkedin.com/in/pranjaljn97/" target="_blank" rel="noopener">LinkedIn</a>.
+        Code on <a href="https://github.com/pranjaljn97" target="_blank" rel="noopener">GitHub</a>;
+        what I'm building at <a href="https://pro.fireplace.gg" target="_blank" rel="noopener">pro.fireplace.gg</a>.
       </p>
-      <p class="note">Fitness nerd, AI enthusiast, and long-term markets observer.</p>
+      <p class="note">Based in Bengaluru, India. Fitness nerd, AI enthusiast, and long-term markets observer.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year">2025</span> Pranjal Jain • Built with HTML & CSS • Hosted on GitHub Pages</small>
+      <small>© <span id="year">2026</span> Pranjal Jain • Built with HTML &amp; CSS • Hosted on GitHub Pages</small>
     </div>
   </footer>
 

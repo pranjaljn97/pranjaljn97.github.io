@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="PJ">
+  <!-- Matches the .brand badge in the nav: a 135deg brand-to-accent gradient.
+       Keep these hex values in sync with the brand/accent custom properties
+       at the top of styles.css. (XML comments cannot contain a double hyphen,
+       so the CSS variable names are spelled out rather than quoted.) -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cd2ff"/>
+      <stop offset="1" stop-color="#9aff6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#g)"/>
+  <text x="32" y="33" fill="#001018"
+        font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="39" font-weight="700" letter-spacing="-2.2"
+        text-anchor="middle" dominant-baseline="central">PJ</text>
+</svg>
